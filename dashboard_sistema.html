@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dashboard Sistema | InfraWatch</title>
+  <link rel="stylesheet" href="dashboard_sistema.css">
+  <link rel="icon" href="logo-infrawatch.png">
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR LATERAL ===== -->
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+      <a href="index.html">
+        <img src="logo-infrawatch.png" alt="InfraWatch">
+      </a>
+    </div>
+
+    <ul class="sidebar-links">
+      <li><a href="html_user_perfil_adm/perfil_adm.html">Painel Integral</a></li>
+      <li><a href="dashboard_geral.html">Painel Detalhes</a></li>
+      <li><a href="dashboard_geral.html">Detalhes CPU</a></li>
+      <li><a href="dashboard_geral.html">Detalhes RAM</a></li>
+      <li><a href="dashboard_geral.html">Detalhes Disco</a></li>
+      <li><a href="dashboard_geral.html">Detalhes Rede</a></li>
+      <li><a href="dashboard_sistema.css" class="active">Detalhes Sistema</a></li>
+    </ul>
+
+    <div class="sidebar-bottom">
+      <a href="https://infrawatch-sptech.atlassian.net/servicedesk/customer/portals" target="_blank">
+        <img id="suporte-jira" src="jira.png" alt="Suporte Jira">
+      </a>
+      <p>Data: <span id="date">31/10/2025</span></p>
+    </div>
+  </nav>
+
+  <div id="titulo-container">
+    <h1>Detalhes do Sistema</h1>
+    <h1 id="maquina-exibe">Máquina em exibição: <select name="" id=""></select></h1>
+  </div>
+
+  <div class="kpi-container">
+  <article class="kpi">
+      <div id="conteudo-kpi">
+        <h4>Quantidade de processos máxima/média</h4>
+        <h2>XX | XX</h2>
+      </div>
+  </article>
+
+  <article class="kpi">
+      <div id="conteudo-kpi">
+        <h4>Quantidade de threads máxima/média</h4>
+        <h2>XX | XX</h2>
+      </div>
+  </article>
+
+  <article class="kpi">
+      <div id="conteudo-kpi">
+        <h4>Quantidade de serviços máxima/média</h4>
+        <h2>XX | XX</h2>
+      </div>
+  </article>
+
+  <article class="kpi2">
+      <img class="icons" src="alarme.png">
+      <div id="conteudo-kpi">
+        <h2>#</h2>
+        <p>Alertas Hoje</p>
+      </div>
+  </article>
+</div>
+  <script src="js/graficos.js"></script>
+  <script src="./js/sessionStorage_usage.js"></script>
+</body>
+
+</html>
